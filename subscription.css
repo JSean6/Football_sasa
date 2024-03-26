@@ -1,8 +1,50 @@
 body {
     font-family: Arial, sans-serif;
-}
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
 
-.site-footer {
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* To ensure padding doesn't add to the width */
+  }
+
+  input[type="number"]::placeholder {
+    color: #999;
+  }
+
+  button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .site-footer {
     background-color: #222;
     color: #fff;
     padding: 40px 0;
