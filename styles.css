@@ -5,10 +5,12 @@ body {
 
 h2 {
     text-decoration-line: underline;
+    text-decoration-color: yellowgreen;
   }
 
 h1 {
     text-decoration-line: overline underline;
+    text-decoration-color: green;
   }
 
 .site-footer {
@@ -78,4 +80,7 @@ h1 {
 
 .soccer{
     color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* add 10px gap between rows and columns */
 }
