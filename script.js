@@ -1,9 +1,3 @@
-// const APIkey = '7f48e8f7-682f-425a-948e-77d67ad827c0'
-
-// fetch('https://content.guardianapis.com/search?api-key=7f48e8f7-682f-425a-948e-77d67ad827c0 ')
-// .then(response => response.json())
-// .then(data => console.log(data.team))
-// .catch(error => console.error(error));
 const apiKey = '7f48e8f7-682f-425a-948e-77d67ad827c0';
 
 async function fetchGuardianData(apiKey) {
