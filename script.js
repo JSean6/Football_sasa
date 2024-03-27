@@ -23,7 +23,8 @@ function renderApis(guardianData) {
     const apiContainer = document.getElementById('guardian');
     guardianData.forEach(result => {
         const apiElement = document.createElement('div');
-        apiElement.innerHTML = `<strong>${result.sectionName}</strong>:  ${result.webTitle} <a href="${result.webUrl}">See More</a> <p>${result.webPublicationDate}</p>`;
+        apiElement.innerHTML = `<div class="soccer"><strong style="color: fff">${result.sectionName}</strong>:  ${result.webTitle} <a href="${result.webUrl}">See More</a> <p>${result.webPublicationDate}</p></div>`;
+        // result.classList.add("articles");
         apiContainer.appendChild(apiElement);
     })
     
