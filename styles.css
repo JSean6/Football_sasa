@@ -72,16 +72,15 @@ h1 {
     .footer-section {
         margin: 10px;
     }
-}
-
-/* .articles {
-    display: none;
-    font-size: 16px;
-} */
+}  
 
 .soccer{
     color: whitesmoke;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px; /* add 10px gap between rows and columns */
+}
+
+#image1 {
+    float : right;
 }
