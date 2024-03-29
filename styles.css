@@ -5,15 +5,20 @@ body {
 
 h2 {
     text-decoration-line: underline;
-    text-decoration-color: yellowgreen;
-    text-shadow: 2px 2px red;
+    text-decoration-color: rgb(71, 71, 239);
+    text-shadow: 2px 2px blue;
   }
 
 h1 {
-    text-decoration-line: overline underline;
-    text-decoration-color: green;
+    text-decoration-line: overline underline ;
+    text-decoration-color: blue;
   }
 
+h5 {
+    text-shadow: 2px 3px  blue;
+    font-style: italic;
+    font-size: 50px;
+}
 .site-footer {
     background-color: #222;
     color: #fff;

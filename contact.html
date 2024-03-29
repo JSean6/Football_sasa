@@ -3,55 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">Home Page</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="livescore.html">Livescores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="subscription.html">Subscribe Now!</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="signin.html">Sign in</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
+ 
   <div class="container">
 
-    <div class="heading2 mt-5 mb-5 text-center text-danger">
+    <div class="heading2 mt-5 mb-5 text-center text-primary">
       <h1>Contact Us</h1>
 
     </div>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn"></label>
+      <i class="fas fa-bars"></i>
+      <label class="logo">FootballSASA</label>
+      <ul>
+        <li><a href="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+    </nav>
+    <section>
 
+    </section>
     <form>
       <div class="row">
         <div class="col">
@@ -83,6 +65,12 @@
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
   </div>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('NUiT_vqQT8PS1ZxEm')
+</script>
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-section">
@@ -113,6 +101,7 @@
       <p>&copy; 2024 FootballSasa. All rights reserved.</p>
     </div>
   </footer>
+<script src="contact.js"></script>
 </body>
 
 </html>
