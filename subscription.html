@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="https://www.paypal.com/sdk/js?client-id=Af_mJOvb8GJB7rsvqvDo1PNhP5ejS07K75qKVf0y4fTd7HYE5V7c3nBIGjNRHPY2HQVZPAhQknOyXlov"></script>
+ 
   <link rel="stylesheet" href="subscription.css">
   <title>Subscription Form</title>
 </head>
@@ -32,10 +32,14 @@
       </ul>
     </div>
   </nav>
-  <div id="paypal-button-container"></div>
-    <p id="result-message"></p>
-    <!-- Replace the "test" client-id value with your client-id -->
-    <script src="https://www.paypal.com/sdk/js?client-id=Af_mJOvb8GJB7rsvqvDo1PNhP5ejS07K75qKVf0y4fTd7HYE5V7c3nBIGjNRHPY2HQVZPAhQknOyXlov&components=buttons&enable-funding=paylater,venmo,card" data-sdk-integration-source="integrationbuilder_sc"></script>
+
+  <h1>M-pesa Payment Page</h1>
+  <label for="amount">Amount: </label>
+  <input type="number" id="amount" placeholder="Enter Amount"><br><br>
+  <label for="phonenumber">Your phonenumber: +2547xxxxxxx</label>
+  <input type="number" id="phonenumber" placeholder="Your phone number"><br><br>
+  <button onclick="payWithMpesa()">Pay with M-Pesa</button>
+
   <script src="subscription.js"></script>
   <footer class="site-footer">
     <div class="footer-container">

@@ -18,7 +18,14 @@ function renderApis(guardianData) {
     guardianData.forEach(result => {
         const apiElement = document.createElement('div');
         apiElement.innerHTML = `<div class="soccer"><strong style="color: fff">${result.sectionName}</strong>:  ${result.webTitle} <a href="${result.webUrl}">More on this</a> <p>${result.webPublicationDate}</p></div>`;
-        // result.classList.add("articles");
+        // const result.webPublicationDate = new Date(year,month,day,hours,minutes);
+        // apiElement.innerHTML = `<div>
+        //     <h3>${result.title}</h3>
+        //     <p>By ${result.author.name}, Published on ${result.webPublicationDate.toLocaleString()}</p>
+        //     <img src="${result.fields.trailText.thumbnail.superSafeUrl}" alt="Thumbnail for Guardian Article"/>
+        //     <img src="${result.fields.trailText.thumbnail.superSquare.url}" alt="Thumbnail for article" />
+        //     <a href="${result.shortUrl}">Read More</a>
+        //  </div>`;
         apiContainer.appendChild(apiElement);
     })
     
