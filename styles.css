@@ -2,6 +2,9 @@ body {
     font-family: monospace;
     background-color: black;
     color: #fff;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-size: 18px;
 }
 
 h2 {
@@ -21,6 +24,17 @@ h5 {
     font-size: 50px;
 }
 
+#p1 {
+    font-size: 40px;
+}
+
+h6 {
+    text-shadow: 2px 3px  blue;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -34,6 +48,7 @@ h5 {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    background-color: #222;
 }
 
 .navbar input[type=text] {
@@ -203,3 +218,21 @@ h5 {
 #image2 {
     float: right;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  
