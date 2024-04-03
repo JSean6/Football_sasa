@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+ 
+  <link rel="stylesheet" href="subscription.css">
+  <title>Subscription Form</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="brand-title">FootballSASA</div>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="subscription.html">Subscription</a></li>
+        <input type="text" placeholder="Search..">
+      </ul>
+    </div>
+  </nav>
+
+  <!-- <h1>M-pesa Payment Page</h1>
+  <label for="amount">Amount: </label>
+  <input type="number" id="amount" placeholder="Enter Amount"><br><br>
+  <label for="phonenumber">Your phonenumber: +2547xxxxxxx</label>
+  <input type="number" id="phonenumber" placeholder="Your phone number"><br><br>
+  <button onclick="payWithMpesa()">Pay with M-Pesa</button>
+ -->
+
+  <input type="number" id="amount">
+  
+  <div id="paypal-button-container"></div>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=Af_mJOvb8GJB7rsvqvDo1PNhP5ejS07K75qKVf0y4fTd7HYE5V7c3nBIGjNRHPY2HQVZPAhQknOyXlov&vault=true&intent=subscription">
+  </script>
+  <script src="subscription.js"></script>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We are committed to delivering excellence through our products and services, aiming to meet and exceed
+          customer expectations.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="subscription.js">Subscribe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Latest News</h3>
+        <p>Stay updated with our latest trends, products, and services.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p>Email: seannjoroge0@example.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 FootballSasa. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
