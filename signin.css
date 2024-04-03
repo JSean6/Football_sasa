@@ -202,3 +202,7 @@ form {
   padding: 50px, 35px;
   box-shadow: 10 10 40px rgba(8,7,16,0.6);
 }
+
+.title {
+  color: black;
+}
