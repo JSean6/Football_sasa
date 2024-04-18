@@ -244,8 +244,35 @@ button {
     grid-gap: 10px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
-    /* text-align: center; */
+    justify-items: center;
     background-color: black;
     color:  white;
 }
 
+@media (maxwidth: 768px){
+    .news {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 769px) and (maxwidth: 1023){
+    .news {
+        grid-template-columns: repeat(2, minmax(0, lfr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .news {
+        grid-template-columns: repeat(2, minmax(0, lfr));
+    }
+}
+
+.brand-title {
+    color: blue;
+}
+
+.img1 {
+    float: right;
+    height: 150px;
+    width: auto;
+}
