@@ -13,9 +13,7 @@ async function fetchGuardianData(apiKey) {
     }
 }
 
-// const publicationDate = new Date(result.webPublicationDate);
-// const formattedDate = `${publicationDate.toLocaleDateString()} ${publicationDate.toLocaleTimeString()}`;
-// apiElement.innerHTML = `<strong>${result.sectionName}</strong>: ${result.webTitle} (Published: ${formattedDate})`;
+
 
 function renderApis(guardianData) {
     const apiContainer = document.getElementById('guardian');
@@ -28,15 +26,7 @@ function renderApis(guardianData) {
         
         <button><a href="${result.webUrl}" style="text-decoration: none; color: white">More on this</a></button>
         </div>`;
-        let webPublicationDate = new Date();
-        console.log(webPublicationDate.toLocaleDateString());
-        // apiElement.innerHTML = `<div>
-        //     <h3>${result.title}</h3>
-        //     <p>By ${result.author.name}, Published on ${result.webPublicationDate.toLocaleString()}</p>
-        //     <img src="${result.fields.trailText.thumbnail.superSafeUrl}" alt="Thumbnail for Guardian Article"/>
-        //     <img src="${result.fields.trailText.thumbnail.superSquare.url}" alt="Thumbnail for article" />
-        //     <a href="${result.shortUrl}">Read More</a>
-        //  </div>`;
+        
         apiContainer.appendChild(apiElement);
     })
     
